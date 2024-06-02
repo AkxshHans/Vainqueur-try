@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+    
+}
+body {
+    background-color: #111;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#loader {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 244, 244);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#loader video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#loader h1 {
+    font-size: 90px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+#main #img1 {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+#main #img2 {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+}
+#navpart1 {
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.4vw;
+}
+#navpart2 {
+position: absolute;
+top: 2vw;
+right: 3vw;
+display: flex;
+gap: 3vw;
+color: rgb(0, 0, 0);
+font-size: 1vw;
+
+}
+
+#content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* color: rgba(255, 255, 255, 0.877); */
+    color: rgb(0, 0, 0);
+
+    font-size: 7vw;
+}
+#content h3 {
+    position: absolute;
+    top: 57%;
+    left: 59%;
+    color: rgb(7, 7, 7);
+    font-size: 1.7vw;
+}
+#content button {
+    position: absolute;
+    top: 67%;
+    left: 45%;
+    /* color: wheat; */
+    font-size: 1vw;
+    border: none;
+    padding: 1vw 2vw;
+}
+#content button:hover{
+    color: white;
+    background-color: black;
+}
+
+#main2  {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+#main2 p  {
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'RX100', sans-serif;
+    position: absolute;
+    top: 113%;
+    left: 6vw;
+}
+#main2 #imga {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+    right: 5vw;
+    top: 105%;
+}
+#main2 button {
+    position: absolute;
+    top: 147%;
+    left: 24%;
+    padding: 1vw 2vw;
+    border: none;
+}
+#main2 button:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+#main2 h5 {
+    position: absolute;
+    top: 160%;
+    font-size: 1.4vw;
+    color: white;
+    left: 22%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#main2 h2 {
+    position: absolute;
+    top: 170%;
+    font-size:5vw;
+    color: #3F69E7;
+    left: 6%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#main3 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+        
+
+}
+#main3 #video1 {
+    /* width: 300px; */
+    height : 450px ;
+    object-fit: cover;
+    position: absolute;
+    top: 208%;
+    left: 10vw;
+}
+#main3 #video2 {
+    /* width: 300px; */
+    height : 450px ;
+    object-fit: cover;
+    position: absolute;
+    top: 221%;
+    left: 40vw;
+}
+#main3 #video3 {
+    /* width: 300px; */
+    height : 450px ;
+    object-fit: cover;
+    position: absolute;
+    top: 208%;
+    left: 70vw;
+    /* opacity: 0.5; */
+}
+#main4 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+#main4 video {
+    width: 100%;
+    /* height: 80vh; */
+    position: absolute;
+    /* left: 10vw; */
+    opacity: 0.9;
+}
+#main4 h3 {
+    position: absolute;
+    top: 330%;
+    color: rgb(0, 0, 0);
+    left: 46%;
+    font-size: 1.5vw;
+}
+#main4 h2 {
+    position: absolute;
+    top: 334%;
+    color:rgb(255, 255, 255);
+    left: 22%;
+    font-size: 10vw;
+    
+}
+#main4 h6 {
+    position: absolute;
+    top: 360%;
+    color:rgb(255, 255, 255);
+    left: 45%;
+    font-size: 1vw;
+    color: #070808;
+    
+}
+
+#main5  {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+#main5 #email {
+    position: absolute;
+    top:  450%;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 1vw;
+    left: 12vw;
+}
+#main5 #email2 {
+    position: absolute;
+    top:  450%;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 1vw;
+    left: 42vw;
+}
+#main5 #email3 {
+    position: absolute;
+    top:  450%;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 1vw;
+    left: 72vw;
+}
+
+
+
+
+
+
+
+@media (max-width:450px) {
+    #main {
+        overflow: hidden;
+        
+    }
+    #navpart1 {
+        font-size: 4vw;
+    }
+    #navpart2 {
+        font-size: 3.6vw;
+        margin-top: 1.5vw;
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+    }
+    #content h1 {
+        font-size: 11vw;
+    }
+    #content h3 {
+        font-size: 5vw;
+        position: absolute;
+        left: 55vw;
+    }
+    #content button {
+        font-size: 4vw;
+        position: absolute;
+        left: 39vw;
+       
+    }
+    #main2 #imga {
+        width: 200px;
+        position: absolute;
+        left: 24vw;
+    }
+    #main2 p {
+        font-size: 2vw;
+        width: 300px;
+        position: absolute;
+        top: 120%;
+        display: none;
+    }
+    #main2 button {
+        font-size: 4vw;
+        position: absolute;
+        left: 43vw;
+        top: 194vw;
+    }
+    #main2 h5 {
+        font-size: 4vw;
+        position: absolute;
+        left: 34vw;
+        top: 348vw;
+
+    }
+    #main2 h2 {
+        font-size: 8vw;
+        position: absolute;
+        top: 360vw;
+        left: 17vw;
+    }
+    #main3 #video1 {
+        height: 260px;
+        position: absolute;
+        left: 5vw;
+    }
+    #main3 #video2 {
+        height: 260px;
+        position: absolute;
+        left: 5vw;
+        top: 253%;
+    }
+    #main3 #video3 {
+        height: 260px;
+        position: absolute;
+        left: 54vw;
+        top: 233%;
+    }
+    #main4 h3 {
+        font-size: 5vw;
+        position: absolute;
+        left: 38%;
+        top: 580vw;
+        /* color: red; */
+    }
+    #main5 {
+        display: none;
+    }
+}

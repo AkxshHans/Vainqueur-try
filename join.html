@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | vainqueur</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+#main {
+    width: 100%;
+    height: 100%;
+}
+#navpart1 {
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    font-size: 1.5vw;
+    z-index: 10;
+}
+#navpart2 {
+position: absolute;
+top: 2vw;
+right: 3vw;
+display: flex;
+gap: 3vw;
+color: rgb(0, 0, 0);
+font-size: 1vw;
+
+}
+#main #vdo1 {
+    /* width: 400px; */
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    top: 7vw;
+    left: 32vw;
+}
+#main #vdo2{
+    /* width: 400px; */
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    top: 7vw;
+    left: 3vw;
+}
+#content h2 {
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    font-size: 2vw;
+    color: white;
+
+}
+#content h5 {
+    position: absolute;
+    top: 65%;
+    left: 62%;
+    /* font-size: 2vw; */
+    color: white;
+
+}
+#content button {
+    position: absolute;
+    top: 55%;
+    left: 66%;
+    font-size: 1vw;
+    color: white;
+    border: none;
+    background-color: gray;
+    padding: 1vw 2vw;
+
+}
+#content  button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:600px){
+    #navpart1 a {
+        font-size: 4vw;
+    }
+    #navpart2 a {
+        font-size: 3.5vw;
+    }
+    #navpart2 h5 {
+        font-size: 3.5vw;
+    }
+    #content #vdo1  {
+        position: absolute;
+        top: 19vw;
+        left: 50vw;
+        width: 50%;
+    }
+    #content #vdo2  {
+        position: absolute;
+        top: 19vw;
+        width: 47%;
+
+        
+    }
+    #content h2 {
+        font-size: 6vw;
+        position: absolute;
+        left: 16vw;
+    }
+    #content button {
+        font-size: 3.2vw;
+        position: absolute;
+        left: 33vw;
+    }
+    #content h5 {
+        font-size: 3vw;
+        position: absolute;
+        left: 13vw;
+    }
+}
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="navpart1">
+      <a style="text-decoration: none;"  href="/index.html">Vainqueur.</a>  
+    </div>
+
+
+    <div id="navpart2">
+        <a style="text-decoration: none; color: rgb(0, 0, 0);" href="about.html"> <h5>Home</h5></a> 
+        <a style="text-decoration: none; color: rgb(0, 0, 0);" href="/vainqueur/index.html"> <h5>Collection</h5></a> 
+
+          <h5>More</h5>
+          <h5>About Us</h5>
+
+      </div>
+
+
+
+      <div id="content">
+        <video autoplay muted loop id="vdo1" src="nikkaround.mp4"></video>
+        <video autoplay muted loop id="vdo2" src="around.mp4"></video>
+<h2>JOIN VAINQUEUR NOW</h2>
+<button>@vainqueurdeceour</button>
+<h5>AND GET NOTIFICATIONS ABOUT LATEST LAUNCH</h5>
+      </div>
+</div>
+
+
+
+   <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script> 
+
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+<script>
+    Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
+
+
+
+Shery.textAnimate("  #content h2 , #content button , #content h5" /* Element to target.*/, {
+  //Parameters are optional.
+  style: 2,
+  y: 10,
+  delay: 0.1,
+  duration: 2,
+  stagger : 0.8 ,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  multiplier: 0.1,
+});
+
+
+
+gsap.from("#main #vdo1",{
+    y: -60,
+    opacity : 0 ,
+    delay: 0.1,
+  duration: 2,
+    
+})
+gsap.from("#main #vdo2",{
+    y: 60,
+    opacity : 0 ,
+    delay: 0.1,
+  duration: 2,
+    
+})
+
+</script>
+</body>
+</html>

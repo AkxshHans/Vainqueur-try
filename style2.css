@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+#loader {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 244, 244);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#loader video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#loader h1 {
+    font-size: 90px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+
+
+
+
+
+
+
+#main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#main h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-weight: 1000;
+    font-size: 4.5vw;
+    /* font-family: 'Panchang', sans-serif; */
+    font-family: 'Technor', sans-serif;
+}
+#main h4 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-weight: 800;
+    
+}
+#main h5 {
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+#main h6 {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+#main button {
+    position: absolute;
+    top: 62%;
+    border: none;
+    padding: 1vw 2vw;
+    left: 46%;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+#main button:hover{
+    color: white;
+    background-color: black;
+}
+#main #socialmedia {
+    position: absolute;
+    top: 85%;
+    left: 7vw;
+}
+#main #aboutus {
+    position: absolute;
+    top: 85%;
+    left: 89%;
+}
+#main #one {
+    position: absolute;
+    top: 3vw;
+    left: 7vw;
+    transform: rotate(-50deg);
+    color: grey;
+    opacity: 0.2;
+    font-size: 1vw;
+}
+#main #two {
+    position: absolute;
+    top: 30vw;
+    left: 15vw;
+    transform: rotate(40deg);
+    color: grey;
+    opacity: 0.2;
+    font-size: 1vw;
+}
+#main #three {
+    position: absolute;
+    top: 10vw;
+    right: 15vw;
+    transform: rotate(20deg);
+    color: grey;
+    opacity: 0.2;
+    font-size: 1vw;
+}
+#main #four {
+    position: absolute;
+    top: 10vw;
+    left: 80%;
+    transform: rotate(-20deg);
+    color: grey;
+    opacity: 0.2;
+    font-size: 1vw;
+}
+#main #five {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: rotate(20deg);
+    color: grey;
+    opacity: 0.2;
+    font-size: 1vw;
+}
+#main #six {
+    position: absolute;
+    top: 39%;
+    left: 57%;
+    
+    color: rgb(7, 7, 7);
+    opacity: 0.8;
+    font-size: 0.8vw;
+}
+
+
+
+
+#main2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+#main2 #leftpart {
+    width: 50%;
+    height: 100vh;
+    /* background-color: red; */
+    border-right: 2px solid black;
+}
+#main2 #rightpart {
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(195, 0, 255); */
+}
+
+#main2 #leftpart img {
+    width: 40%;
+height: 90%;
+object-fit: cover;
+position: absolute;
+top: 105%;
+left: 5vw;
+opacity: 0.7;
+}
+#main2 #leftpart img:hover {
+    opacity: 1;
+
+}
+
+#main2 #leftpart h1 {
+    position: absolute;
+    top: 110%;
+    left: 11%;
+    color: white;
+    font-size: 4.2vw;
+    font-family: 'Chillax', sans-serif;
+
+}
+#main2 #leftpart h1:hover{
+    color: rgb(50, 53, 53);
+}
+#main2  #leftpart  button {
+    position: absolute;
+    top: 186%;
+    left: 36%;
+    border: none;
+    padding: 1vw;
+}
+#main2  #leftpart  button:hover{
+    color: white;
+    background-color: #1F386D;
+}
+#main2 #rightpart img{
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    position: absolute;
+    top: 105%;
+    right: 5vw;
+    opacity: 0.7;
+
+}
+#main2 #rightpart h1 {
+    position: absolute;
+    top: 110%;
+    right: 10%;
+    color: white;
+    font-size: 4vw;
+    font-family: 'Chillax', sans-serif;
+
+}
+#main2 #rightpart h1:hover{
+    color: rgb(50, 53, 53);
+}
+#main2  #rightpart  button {
+    position: absolute;
+    top: 186%;
+    right: 7%;
+    border: none;
+    padding: 1vw;
+}
+#main2  #rightpart  button:hover{
+    color: white;
+    background-color: #1F386D;
+}
+#main2 #rightpart img:hover {
+    opacity: 1;
+
+}
+
+
+#main3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#main3 #left {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-right: 2px solid black
+    ;
+} 
+#main3 #left img {
+    width: 40%;
+    object-fit: cover;
+    height: 90%;
+    position: absolute;
+    top: 205%;
+    left: 5vw;
+    opacity: 0.7;
+}
+#main3 #left h1 {
+    /* width: 40%; */
+    /* object-fit: cover; */
+    /* height: 90%; */
+    position: absolute;
+    top: 215%;
+    font-size: 5vw;
+    color: white;
+
+    left: 15vw;
+    font-family: 'Chillax', sans-serif;
+    
+}
+#main3 #left img:hover{
+    opacity: 1;
+}
+#main3 #right {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-right: 2px solid black
+    ;
+} 
+#main3 #left button {
+    position: absolute;
+    top: 285%;
+    left: 34%;
+    border: none;
+    padding: 1vw 2vw;
+}
+
+
+#main3  #left  button:hover{
+    color: white;
+    background-color: #1F386D;
+}
+#main3 #right img {
+    width: 40%;
+    object-fit: cover;
+    height: 90%;
+    position: absolute;
+    top: 205%;
+    right: 5vw;
+    opacity: 0.7;
+}
+#main3 #right img:hover{
+    opacity: 1;
+}
+#main3 #right h1 {
+    position: absolute;
+    top: 210%;
+    right: 11%;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Chillax', sans-serif;
+
+}
+
+#main3 #right button {
+    position: absolute;
+    top: 285%;
+    right: 8%;
+    border: none;
+    padding: 1vw 2vw;
+}
+
+
+#main3  #right  button:hover{
+    color: white;
+    background-color: #1F386D;
+}
+
+#main3 #right h1:hover{
+    color: rgb(50, 53, 53);
+}
+#main3 #left h1:hover{
+    color: rgb(50, 53, 53);
+}
+
+
+#main4 {
+    width: 100%;
+    height: 100%;
+}
+#main4 h1 {
+    position: absolute;
+    top: 302%;
+    left: 35%;
+    font-family: 'Rosaline', cursive;
+}
+#main4 h5 {
+    position: absolute;
+    top: 308%;
+    left: 45%;
+    font-family: 'Rosaline', cursive;
+}
+#main4 #aka{
+    font-family: 'Pencerio', cursive;
+    position: absolute;
+    top: 380%;
+    left: 12%;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+#main4 #nikk{
+    font-family: 'Pencerio', cursive;
+    position: absolute;
+    top: 384%;
+    left: 12%;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+#main4 video {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 315%;
+    left: 35%;
+}
+
+
+#main5 {
+    width: 100%;
+    height: 100%;
+}
+#main5 img {
+    position: absolute;
+    left: 13%;
+}
+
+
+
+
+
+@media (max-width:600px){
+    #main h4 {
+        display: none;
+    }
+    #main h1 {
+        font-size: 13vw;
+    }
+    #main h5 {
+        font-size: 3.8vw;
+        position: absolute;
+        left: 23vw;
+    }
+    #main h6 {
+        font-size: 3vw;
+        position: absolute;
+        left: 29vw;
+    }
+    #main button {
+        font-size: 4vw;
+        position: absolute;
+        left: 35vw;
+    }
+    #main #aboutus {
+        position: absolute;
+        left: 81vw;
+
+    }
+    #main2 #leftpart button {
+        position: absolute;
+        left: 13vw;
+        font-size: 4vw;
+    }
+    #main2 #rightpart button {
+        position: absolute;
+        right: 13vw;
+        font-size: 4vw;
+    }
+    #main3 #left button {
+        position: absolute;
+        left: 13vw;
+        font-size: 4vw;
+    }
+    #main3 #right h1 {
+        position: absolute;
+        top: 390vw;
+    }
+    #main3 #right button {
+        position: absolute;
+        right: 13vw;
+        font-size: 4vw;
+    }#main4 h1 {
+        display: none;
+    }
+    #main4 h5 {
+        font-size: 6vw;
+        position: absolute;
+        left: 28vw;
+    }
+    #main4 video {
+        position: absolute;
+        top: 332vw;
+        display: none;
+
+    }
+    #main4 #aka {
+        font-size: 4vw;
+        position: absolute;
+        left: 15vw;
+        top: 425vw;
+        display: none;
+    }
+    #main4 #nikk {
+        font-size: 4vw;
+        position: absolute;
+        left: 62vw;
+        top: 425vw;
+        display: none;
+
+    }
+    #main5 img {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        top: 330%;
+    }
+    
+
+}

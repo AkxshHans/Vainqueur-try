@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US  | Vainqueur</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body , html {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+#navpart1 {
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.4vw;
+}
+#navpart2 {
+position: absolute;
+top: 2vw;
+right: 3vw;
+display: flex;
+gap: 3vw;
+color: rgb(0, 0, 0);
+font-size: 1vw;
+
+}
+#content p {
+    position: absolute;
+    top: 10vw;
+    left: 14vw;
+    font-size: 1.5vw;
+    width: 1000px;
+    font-family: 'Clash Display', sans-serif;
+}
+#main2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+#main2 h2 {
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    font-size: 4vw;
+}
+@media (max-width:600px){
+    #main {
+        overflow: hidden;
+    }
+    #navpart1 a {
+        font-size: 4vw;
+    }
+    #navpart2 {
+        font-size: 3.5vw;
+    }
+    #content p {
+        font-size: 3vw;
+        position: absolute;
+        left: 10vw;
+        width: 500px;
+        top: 18vw;
+        display: none;
+    }
+    #main2 h2 {
+        position: absolute;
+        top: 30%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="navpart1">
+        <a style="text-decoration: none;" href="/index.html"> Vainqueur.</a>   
+        </div>
+
+        <div id="navpart2">
+          <a style="text-decoration: none; color: rgb(0, 0, 0);" href="about.html"> <h5>Home</h5></a> 
+          <a style="text-decoration: none; color: rgb(0, 0, 0);" href="index2.html"> <h5>Collection</h5></a> 
+
+            <h5>More</h5>
+           <a style="text-decoration: none; color: rgb(0, 0, 0);" href="aboutus.html"> <h5>About Us</h5> </a> 
+
+        </div>
+
+
+
+
+
+        <div id="content">
+            <p>At Vainqueur, we believe that winning is not just about the end result; it's about the journey, the <br> determination, and the unwavering commitment to excellence. Our brand is a tribute to individuals <br> who strive for greatness, who overcome obstacles with grace, and who inspire others with their <br> indomitable spirit.
+<br>
+                Drawing inspiration from the world of high fashion and European elegance, Vainqueur offers a <br> curated collection of clothing that merges sophistication with modernity. Each garment is <br> meticulously crafted with attention to detail, using premium fabrics and timeless designs to exude  <br>an aura of luxury and refinement.
+            
+
+                From impeccably tailored suits to effortlessly chic casual wear, every piece in the Vainqueur  <br>collection is designed to empower wearers to conquer their goals and express their unique sense <br> of style. Whether it's a boardroom meeting, a social event, or a casual outing, Vainqueur ensures  <br>that you look and feel like a champion, ready to take on the world with confidence and poise.
+<br>
+Join us on a journey of triumph and distinction with Vainqueur, where winning isn't just a  <br>destination—it's a way of life.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="main2">
+        <!-- <img src="street2.jpg" alt=""> -->
+      <h2>  "VAINQUEUR DE CEOUR" </h2>
+    </div>
+    <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+<script>
+gsap.from("#navpart1 , #navpart2 h5 , #main p",{
+    y:-100,
+    opacity : 0 ,
+    // scale : 0 ,
+    stagger : 0.3,
+})
+
+
+
+
+Shery.textAnimate("#main2 h2" /* Element to target.*/, {
+  //Parameters are optional.
+  style: 1,
+  y: 10,
+  delay: 0.1,
+  duration: 2,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  multiplier: 0.1,
+  
+});
+</script>
+</body>
+</html>
